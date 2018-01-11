@@ -27,7 +27,7 @@ body {
   transform-origin: 0% 0%;
 }
 .lamp .cable {
-  height: 100%;
+  height: 40%;
   width: 4px;
   background: #111;
   margin: 0 auto;
@@ -181,7 +181,14 @@ body {
 
 
 .statusbar {
-    margin-top: -25px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+
 }
 
 .separator {

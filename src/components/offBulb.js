@@ -37,6 +37,15 @@ class OffBulb extends Component {
     render() {
         return (
             <div>
+                <div className="statusbar">
+                    <span className="separator">{NO_LIGHT}</span>
+                    <p><i class="em em-cry"></i>
+                        <i class="em em-disappointed"></i>
+                        <span className="separator">There is no Internet Connectivity at Home from <b>{this.state.lastSynchedDate}</b></span>
+                        <i class="em em-cry"></i>
+                        <i class="em em-mobile_phone_off"></i>
+                    </p>
+                </div>
                 <div>
                     <div className='container lamp'>
                         <div className='cable'></div>
@@ -56,15 +65,6 @@ class OffBulb extends Component {
                             </filter>
                         </defs>
                     </svg>
-                </div>
-                <div className="statusbar">
-                    <span className="separator">{NO_LIGHT}</span>
-                    <p><i class="em em-cry"></i>
-                        <i class="em em-disappointed"></i>
-                        <span className="separator">There is no Internet Connectivity at Home from <b>{this.state.lastSynchedDate}</b></span>
-                        <i class="em em-cry"></i>
-                        <i class="em em-mobile_phone_off"></i>
-                    </p>
                 </div>
             </div>
         )
