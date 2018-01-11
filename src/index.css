@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fcbf11;
+  overflow: hidden;
+}
+
+.container {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lamp {
+  text-align: center;
+  transform-origin: 0% 0%;
+}
+.lamp .cable {
+  height: 100%;
+  width: 4px;
+  background: #111;
+  margin: 0 auto;
+}
+.lamp .cable::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 8px;
+  background: #111;
+  bottom: 0;
+  margin: 0 -4px;
+}
+.lamp #bulb {
+  width: 70px;
+  margin: 0 auto;
+  position: relative;
+}
+.lamp #bulb .bulb_cover {
+  height: 45px;
+  width: 40px;
+  background: #111;
+  margin: -1px auto;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.lamp #bulb .bulb_cover::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 2px;
+  background: #50504f;
+  border-radius: 50px;
+  margin: 15px 13px;
+}
+.lamp #bulb .bulb_light {
+  filter: url("#goo");
+  height: 70px;
+  background: #FFF;
+  border-radius: 50%;
+  margin: 10px 0 0 0;
+}
+.lamp #bulb .bulb_light::before {
+  content: "";
+  filter: url("#goo");
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background: #FFF;
+  border-radius: 50%;
+  margin: -25px -17.5px;
+  z-index: -1;
+}
+.lamp #bulb .light_particles {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -25px -67px;
+  z-index: -1;
+}
+.lamp #bulb .light_particles .particle {
+  height: 20px;
+  width: 4px;
+  background: #FFF;
+  border-radius: 50px;
+  position: absolute;
+  margin: 100px;
+}
+.lamp #bulb .light_particles .particle:nth-child(4), .lamp #bulb .light_particles .particle:nth-child(5) {
+  display: none;
+}
+.lamp #bulb .light_particles .particle:nth-child(1) {
+  transform: rotate(40deg) translateY(66.6666666667px);
+}
+.lamp #bulb .light_particles .particle:nth-child(2) {
+  transform: rotate(80deg) translateY(66.6666666667px);
+}
+.lamp #bulb .light_particles .particle:nth-child(3) {
+  transform: rotate(120deg) translateY(66.6666666667px);
+}
+.lamp #bulb .light_particles .particle:nth-child(4) {
+  transform: rotate(160deg) translateY(66.6666666667px);
+}
+.lamp #bulb .light_particles .particle:nth-child(5) {
+  transform: rotate(200deg) translateY(66.6666666667px);
+}
+.lamp #bulb .light_particles .particle:nth-child(6) {
+  transform: rotate(240deg) translateY(66.6666666667px);
+}
+.lamp #bulb .light_particles .particle:nth-child(7) {
+  transform: rotate(280deg) translateY(66.6666666667px);
+}
+.lamp #bulb .light_particles .particle:nth-child(8) {
+  transform: rotate(320deg) translateY(66.6666666667px);
+}
+.lamp #bulb .light_particles .particle:nth-child(9) {
+  transform: rotate(360deg) translateY(66.6666666667px);
+}
+
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.dot {
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    float: left;
+    margin: 0 5px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: fx 1000ms ease infinite 0ms;
+    animation: fx 1000ms ease infinite 0ms;
+}
+.dot:nth-child(2) {
+    -webkit-animation: fx 1000ms ease infinite 300ms;
+    animation: fx 1000ms ease infinite 300ms;
+}
+.dot:nth-child(3) {
+    -webkit-animation: fx 1000ms ease infinite 600ms;
+    animation: fx 1000ms ease infinite 600ms;
+}
+@-webkit-keyframes fx {
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fx {
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
