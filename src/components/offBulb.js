@@ -48,7 +48,6 @@ class OffBulb extends Component {
                 </div>
                 <div>
                     <div className='container lamp'>
-                        <div className='cable'></div>
                         <div id='bulb'>
                             <div className='bulb_cover'></div>
                             <div className='bulb_light'></div>
