@@ -45,7 +45,10 @@ class OnBulb extends Component {
                 </svg>
             </div>
                 <p>
-                    Current status : {YES_LIGHT}
+                    <i class="em em-lightning"></i>
+                    <span className="separator">{YES_LIGHT}</span>
+                    <i class="em em-beers"></i>
+                    <i class="em em-tv"></i>
                 </p>
             </div>
         )

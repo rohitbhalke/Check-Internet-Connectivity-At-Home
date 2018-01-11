@@ -11,11 +11,17 @@ class Loader extends Component {
     }
     render() {
         return (
+            <div>
             <div class="container">
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
             </div>
+                <div className="footer">
+                    Fetching Internet Connection Status At C2 - 24, Pleasant Park - Phase2
+                </div>
+            </div>
+
         )
     }
 }

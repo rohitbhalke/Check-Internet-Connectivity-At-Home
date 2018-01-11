@@ -11,7 +11,7 @@ body {
 
 body {
   margin: 0;
-  background: #fcbf11;
+  background: cadetblue;
   overflow: hidden;
 }
 
@@ -177,4 +177,24 @@ body {
     100% {
         opacity: 0;
     }
+}
+
+
+.statusbar {
+    margin-top: -25px;
+}
+
+.separator {
+    padding: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
